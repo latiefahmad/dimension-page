@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,62 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* Telegram Icon */
+
+	#telegram-icon {
+		position: fixed;
+		bottom: 2rem;
+		right: 2rem;
+		z-index: 10000;
+		opacity: 0; /* Hidden by default */
+		transition: opacity 0.325s ease-in-out;
+	}
+
+		#telegram-icon a {
+			display: block;
+			width: 3.5rem; /* Default size */
+			height: 3.5rem; /* Default size */
+			line-height: 3.5rem;
+			font-size: 1.5rem;
+			text-align: center;
+			border-radius: 100%;
+			background-color: #0088cc; /* Telegram blue */
+			color: #ffffff !important;
+			box-shadow: 0 0 0 1px #0088cc;
+		}
+
+		#telegram-icon a:hover {
+			background-color: darken(#0088cc, 10%) !important;
+		}
+
+		#telegram-icon a:active {
+			background-color: darken(#0088cc, 20%) !important;
+		}
+
+	@media screen and (max-width: 736px) {
+		#telegram-icon {
+			bottom: 1.5rem;
+			right: 1.5rem;
+		}
+
+		#telegram-icon a {
+			width: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+			font-size: 1.25rem;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#telegram-icon {
+			bottom: 1rem;
+			right: 1rem;
+		}
+
+		#telegram-icon a {
+			width: 2.5rem;
+			height: 2.5rem;
+			line-height: 2.5rem;
+			font-size: 1rem;
+		}
+	}

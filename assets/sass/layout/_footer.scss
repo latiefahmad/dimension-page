@@ -16,6 +16,8 @@
 		max-width: 100%;
 		margin-top: 2rem;
 		text-align: center;
+		position: absolute; /* Add this line */
+		bottom: 0; /* Add this line */
 
 		.copyright {
 			letter-spacing: _font(letter-spacing);

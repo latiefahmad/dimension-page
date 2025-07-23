@@ -29,6 +29,10 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+// Show Telegram icon after page load.
+			window.setTimeout(function() {
+				$('#telegram-icon').css('opacity', '1');
+			}, 100);
 		});
 
 	// Fix: Flexbox min-height bug on IE.
@@ -398,4 +402,7 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+// Update current year in footer.
+	var currentYear = new Date().getFullYear();
+	$('#current-year').text(currentYear);
 })(jQuery);
